@@ -11,6 +11,6 @@ describe('Test math functions', () => {
     expect(math.multiply(2, 3)).toBe(6);
   });
   it('should equal 6', () => {
-    expect(math.divide(36, 6)).toBe(3);
+    expect(math.divide(36, 6)).toBe(6);
   });
 });

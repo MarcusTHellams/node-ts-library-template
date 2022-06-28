@@ -13,5 +13,3 @@ export const divide = (num1: number, num2: number) => {
 export const multiply = (num1: number, num2: number) => {
   return num1 * num2;
 };
-
-const jimmy = 'jimmy';
