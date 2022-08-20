@@ -11,6 +11,7 @@ specifiers:
   eslint-import-resolver-typescript: ^3.3.0
   eslint-plugin-import: ^2.26.0
   eslint-plugin-simple-import-sort: ^7.0.0
+  eslint-plugin-sort-destructure-keys: ^1.4.0
   husky: ^8.0.1
   prettier: ^2.7.1
   ts-node: ^10.9.1
@@ -30,6 +31,7 @@ devDependencies:
   eslint-import-resolver-typescript: 3.3.0_afl3vkhn63baibzal45igheroq
   eslint-plugin-import: 2.26.0_ng73mesgr3qjuo2tra2ynrmv5i
   eslint-plugin-simple-import-sort: 7.0.0_eslint@8.20.0
+  eslint-plugin-sort-destructure-keys: 1.4.0_eslint@8.20.0
   husky: 8.0.1
   prettier: 2.7.1
   ts-node: 10.9.1_tdn3ypgnfy6bmey2q4hu5jonwi
@@ -1020,6 +1022,16 @@ packages:
       eslint: 8.20.0
     dev: true
 
+  /eslint-plugin-sort-destructure-keys/1.4.0_eslint@8.20.0:
+    resolution: {integrity: sha512-txU9l22mblz7YpyjJNYFy4wb5PVXiRMbc9lqFPPhvY4wKyBBYQvb31TIcduf7iRb4Bv01aiXcJiuCkOOrVY48Q==}
+    engines: {node: '>=6.0.0'}
+    peerDependencies:
+      eslint: 3 - 8
+    dependencies:
+      eslint: 8.20.0
+      natural-compare-lite: 1.4.0
+    dev: true
+
   /eslint-scope/5.1.1:
     resolution: {integrity: sha512-2NxwbF/hZ0KpepYN0cNbo+FN6XoK7GaHlQhgx/hIZl6Va0bF45RQOOwhLIy8lQDbuCiadSLCBnH2CFYquit5bw==}
     engines: {node: '>=8.0.0'}
@@ -1772,6 +1784,10 @@ packages:
     resolution: {integrity: sha512-MqBkQh/OHTS2egovRtLk45wEyNXwF+cokD+1YPf9u5VfJiRdAiRwB2froX5Co9Rh20xs4siNPm8naNotSD6RBw==}
     engines: {node: ^10 || ^12 || ^13.7 || ^14 || >=15.0.1}
     hasBin: true
+    dev: true
+
+  /natural-compare-lite/1.4.0:
+    resolution: {integrity: sha512-Tj+HTDSJJKaZnfiuw+iaF9skdPpTo2GtEly5JHnWV/hfv2Qj/9RKsGISQtLh2ox3l5EAGw487hnBee0sIJ6v2g==}
     dev: true
 
   /natural-compare/1.4.0:
