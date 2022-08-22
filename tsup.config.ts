@@ -8,6 +8,10 @@ export default defineConfig({
   dts: true,
   format: ['cjs', 'esm', 'iife'],
   globalName: 'nodeTsLibraryTemplate',
-  legacyOutput: true,
   minify: true,
+  outExtension({ format }) {
+    return {
+      js: `.${format}.js`,
+    };
+  },
 });

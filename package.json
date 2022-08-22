@@ -2,16 +2,17 @@
   "name": "node-ts-library-template",
   "version": "0.0.1",
   "description": "",
-  "main": "dist/index.js",
-  "module": "dist/esm/index.js",
-  "browser": "dist/iife/index.js",
+  "main": "dist/index.cjs.js",
+  "module": "dist/index.esm.js",
+  "browser": "dist/index.iife.js",
   "types": "dist/index.d.ts",
   "files": [
     "dist"
   ],
   "scripts": {
     "build": "tsup",
-    "dev": "tsup --watch",
+    "dev": "tsup --watch --onSuccess \"ts-node src/index.ts\"",
+    "dev:debug": "tsup --watch --onSuccess \"node --inspect -r ts-node/register src/index.ts\"",
     "format": "prettier . --write --ignore-path .gitignore && git update-index --again",
     "lint": "eslint . --ext .ts,.tsx --fix --ignore-path .gitignore",
     "test": "vitest",
@@ -23,6 +24,7 @@
   "author": "Marcus Hellams",
   "license": "ISC",
   "devDependencies": {
+    "@swc/core": "^1.2.241",
     "@tsconfig/node16": "^1.0.3",
     "@types/node": "^18.0.6",
     "@typescript-eslint/eslint-plugin": "^5.30.7",
