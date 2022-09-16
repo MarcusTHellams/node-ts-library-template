@@ -1,4 +1,5 @@
 {
+  "root": true,
   "env": {
     "browser": true,
     "es2021": true,
@@ -18,7 +19,8 @@
     "@typescript-eslint",
     "simple-import-sort",
     "import",
-    "sort-destructure-keys"
+    "sort-destructure-keys",
+    "prettier"
   ],
   "rules": {
     "indent": ["error", 2],
@@ -32,7 +34,7 @@
     "import/no-duplicates": "error",
     "no-unused-vars": "off",
     "@typescript-eslint/no-unused-vars": [
-      "error",
+      "warn",
       {
         "vars": "all",
         "args": "after-used",
@@ -43,6 +45,7 @@
     ],
     "@typescript-eslint/ban-ts-comment": "off",
     "@typescript-eslint/no-non-null-assertion": "off",
-    "sort-destructure-keys/sort-destructure-keys": "error"
+    "sort-destructure-keys/sort-destructure-keys": "error",
+    "no-console": ["warn", { "allow": ["warn", "error"] }]
   }
 }
